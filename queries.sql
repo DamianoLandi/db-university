@@ -49,3 +49,11 @@ FROM `teachers`;
 SELECT COUNT(`id`)
 FROM `students`
 GROUP BY year(`enrolment_date`);
+
+-- Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+
+SELECT COUNT(`id`)
+FROM `teachers`
+GROUP BY `office_address`;
+
+
