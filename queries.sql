@@ -15,3 +15,9 @@ WHERE `cfu` > 10;
 SELECT `name`, `surname`, `date_of_birth`
 FROM `students`
 WHERE 2021 - year(`date_of_birth`) > 30;
+
+-- Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea
+
+SELECT *
+FROM `courses`
+WHERE `year` = 1 AND `period` = 'I semestre';
