@@ -21,3 +21,9 @@ WHERE 2021 - year(`date_of_birth`) > 30;
 SELECT *
 FROM `courses`
 WHERE `year` = 1 AND `period` = 'I semestre';
+
+-- Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del 20/06/2020
+
+SELECT *
+FROM `exams`
+WHERE `date` = '2020-06-20' AND hour(`hour`) > 14;
