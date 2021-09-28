@@ -44,6 +44,10 @@ FROM `departments`;
 SELECT COUNT(`id`) - COUNT(`phone`)
 FROM `teachers`;
 
+SELECT COUNT(`id`)
+FROM `teachers`
+WHERE `phone` IS NULL;
+
 -- Contare quanti iscritti ci sono stati ogni anno
 
 SELECT COUNT(`id`)
