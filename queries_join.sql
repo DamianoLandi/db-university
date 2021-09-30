@@ -38,7 +38,7 @@ JOIN `teachers` ON `course_teacher`.`teacher_id` = `teachers`.`id`;
 
 -- Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica
 
-SELECT `teachers`.`name`, `teachers`.`surname`, `departments`.`name`
+SELECT DISTINCT `teachers`.`name`, `teachers`.`surname`, `departments`.`name`
 FROM `teachers`
 JOIN `course_teacher` ON `teachers`.`id` = `course_teacher`.`teacher_id`
 JOIN `courses` ON `course_teacher`.`course_id` = `courses`.`id`
